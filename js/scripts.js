@@ -29,4 +29,18 @@ $(document).ready(function() {
     var result = subtract(subtract1, subtract2);
     $("#outputSubtract").text(result);
   });
+  $("#multiplyForm").submit(function(event){
+    event.preventDefault();
+    var multiply1 = parseInt($("#multiply1").val());
+    var multiply2 = parseInt($("#multiply2").val());
+    var result = multiply(multiply1, multiply2);
+    $("#outputMultiply").text(result);
+  });
+  $("#divideForm").submit(function(event){
+    event.preventDefault();
+    var divide1 = parseInt($("#divide1").val());
+    var divide2 = parseInt($("#divide2").val());
+    var result = divide(divide1, divide2);
+    $("#outputDivide").text(result);
+  });
 });
